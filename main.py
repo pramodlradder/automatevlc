@@ -17,13 +17,13 @@ def play():
       time.sleep(2)
       global mi
       mi=win32gui.GetForegroundWindow()
-      #print(mi)
-      win32gui.ShowWindow(mi,win32con.SW_MINIMIZE)
+      #print(mi) object id of vlc
+      win32gui.ShowWindow(mi,win32con.SW_MINIMIZE) #minimize the vlc window
       os.system(file)
       pyautogui.hotkey('alt','f4')
 
 def pause():
-      win32gui.ShowWindow(mi,win32con.SW_MAXIMIZE)
+      win32gui.ShowWindow(mi,win32con.SW_MAXIMIZE)#maximize the vlc window
       time.sleep(2)
       pyautogui.press('playpause')
       win32gui.ShowWindow(mi,win32con.SW_MINIMIZE)
