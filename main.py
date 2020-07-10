@@ -68,7 +68,7 @@ def main():
       close()
 
                 
-if __name__=='__main__':
+if __name__=='__main__': 
   while option !="close":
     option = input("Enter the option:")
     if option=="close":
